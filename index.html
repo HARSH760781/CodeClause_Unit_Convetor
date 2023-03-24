@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading"><u> Unit Convertor</u> </h1>
+        <table>
+            <tr>
+                <div class="title"><b> Unit : </b>
+                    <select id="Unit">
+                        <label for="Unit">Unit</label>
+                        <option id="length" value="Length" selected>Length</option>
+                    </select>
+                </div>
+            </tr>
+            <tr>
+                <div class="number">
+                    <h2>No. of Unit :</h2>
+                    <input type="text" name="number" id="number" placeholder="e.g. 1" autocomplete="off">
+                </div>
+            </tr>
+            <tr>
+                <div class="From">
+                    <h2>Convert From : </h2>
+                    <select id="From">
+                        <label for="Unit">Unit</label>
+                        <option value="KiloMeter" selected><b>KiloMeter</b></option>
+                        <option value="Meter"><b>Meter</b></option>
+                        <option value="Centimeter">Centimeter</option>
+                    </select>
+                </div>
+            </tr>
+            <tr>
+                <div class="To">
+                    <h2>Convert To : </h2>
+                    <select id="To">
+                        <label for="Unit">Unit</label>
+                        <option value="KiloMeter" selected><b>KiloMeter</b></option>
+                        <option value="Meter"><b>Meter</b></option>
+                        <option value="Centimeter">Centimeter</option>
+                    </select>
+                </div>
+            </tr>
+
+        </table>
+        <div class="btn">
+            <button type="button" onclick="calculate()">Calculate</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
